@@ -1,6 +1,7 @@
 <template>
   <div class="game">
     <pmd></pmd>
+    <button v-on:click="axiosDemo">请求api测试</button>
   </div>
 </template>
 
@@ -14,7 +15,11 @@ export default {
   	pmd
   },
   methods:{
-   
+			axiosDemo:function(){	
+				axios.get('/hy/lottery/vueTest.do').then(res => {
+				  alert(res)
+				})
+			}
   }
 };
 </script>

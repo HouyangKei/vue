@@ -11,7 +11,7 @@ module.exports = {
 	devServer: {
 	    proxy: {
 	      '/hy': {
-	        target: 'tsd.ftsafe.com/',
+	        target: process.env.VUE_APP_URL,
 	        ws: true,
 	        changeOrigin: true,
 	        pathRewrite: {

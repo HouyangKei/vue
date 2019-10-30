@@ -28,6 +28,8 @@
 
 <script>
 	//import pmdjs from "../js/game.js"
+	import axios from 'axios'
+	import VueAxios from 'vue-axios'
 	export default {
 	    data:function () {
 	      return  {
