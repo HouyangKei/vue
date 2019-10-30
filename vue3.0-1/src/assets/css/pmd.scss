@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* CSS Document */
+.pmd{
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-size: 85% 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 17.5% 4.5% 6.8% 5%;
+    background-position-x: center;
+    background-image: url($baseUrl + 'images/pmd/shandeng.png');
+    .luck {
+        width: 90%;
+        height: 90%;
+        margin: 0 auto;
+    }
+    %td-common {
+        width: 25%;
+        height: 25px;
+        background-repeat: no-repeat;
+        background-size: 100%;  
+        margin:0;
+    }
+    .active {
+        @extend %td-common; //继承公用样式
+        background-image: url($baseUrl +'images/pmd/active.png');
+    }
+    td {
+        @extend %td-common;
+        text-align: center;
+        background-image: url($baseUrl +'images/pmd/proBj.png');
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    .gaem-btn {
+        background-image: url($baseUrl +'images/pmd/buttonUp.png');
+    }
+    .luck-unit img {
+        width: 80%;
+        text-align:center;
+    }
+}
+
+
+
+
+
+
+
